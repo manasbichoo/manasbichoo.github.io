@@ -1,14 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
+  <title>Manas Bichoo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
 #i{
 border:1px solid black;
-width:180px;
-hight:180px;
-display: block;
-margin-left: auto;
-margin-right: auto;
-border-radius: 100px;
+width:150px;
+hight:150px;
+
 }
 #i:hover
 {
@@ -16,77 +51,235 @@ transform: scale(1.5);
 transition-duration: 0.1s;
 box-shadow:5px 5px 5px 5px #333333;
 }
-.b
-{
-  background-color: #AAAAAA;
-  border: 1px solid black;
-  border-radius:20px;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: underline black;
-  display: inline-block;
-  font-size: 25px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-font-variant:small-caps;
-}
-.b:hover
-{
-transform: scale(1.2);
-transition-duration: 0.1s;
-box-shadow:2px 2px 2px 2px #333333;
-background-color: grey;
-}
-#d1
-{
-background-color: #AAAAAA;
-border: 1px solid black;
-border-radius: 40px;
-font-variant:small-caps;
-font-size:18px;
-}
-#d1:hover
-{
-transform: scale(1);
-transition-duration: 0.5s;
-box-shadow:2px 2px 2px 2px #333333;
-background-color:grey;
-font-size: 18px;
-}
+
 #d2
 {
 font-variant:small-caps;
 text-decoration: underline wavy black;
 }
 
-</style>
+#d1
+{
+border: 1px solid black;
+border-radius: 40px;
+font-variant:small-caps;
+font-size:10px;
+}
+.heading
+{
+font-variant:small-caps;
+text-decoration: underline wavy black;
+}
+
+.education{
+    margin-top:10%;
+}
+
+.edu{
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+.edu3{
+    text-align: center;
+}
+.line{
+    display: none;
+}
+
+.self_info{
+    margin-top:50px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.star{
+    margin-top:5px;
+    color:gold;
+}
+.star2{
+    color:rgb(179, 176, 176);
+}
+
+.skill{
+    font-size: 0%;
+    text-align: center;
+
+}
+
+.subject{
+    height: 15px;
+    border-radius: 50px;
+    background-color: rgb(83, 80, 80);
+
+}
+
+ [data-value="95"]{
+    width: 95%;
+}
+[data-value="90"]{
+    width: 90%;
+}
+[data-value="80"]{
+    width: 80%;
+}
+[data-value="90"]{
+    width: 90%;
+}
+[data-value="75"]{
+    width: 75%;
+}
+[data-value="60"]{
+    width: 60%;
+}
+[data-value="70"]{
+    width: 70%;
+}
+
+footer{
+    background-color: #383636;
+}
+
+ul{
+    list-style-type: none;
+}
+footer h4{
+    margin:5px;
+    color:white;
+}
+
+.contact_logo li{
+    display: inline;
+}
+
+.logos{
+    margin-left: 10px;
+    color:white;
+    font-size: 25px;
+}
+
+.logos:hover{
+    cursor: pointer;
+    color: aquamarine;
+}
+
+.copyright{
+    color: aliceblue;
+    text-align: center;
+}
+
+
+
+  </style>
 </head>
-<body  bgcolor="#DDDDDD">
-<div>
-<img src="manas.JPG" id="i" />
-</div>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">archman</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="Manas's Resume (1).pdf">Resume</a></li>
+        <li><a href="https://www.github.com/manasbichoo">Projects</a></li>
+        <li><a href ="#footer">Contact</a></li>
+        <li><a href ="https://archmanas.wordpress.com/">Blog</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+
+    <div class="col-sm-8 text-left" id="about">
+      <img src="manas.JPG" id="i" />
 <div id="d2">
-<h1 align="center"> Manas Bichoo </h1>
-<h2 align="center"> Skilled Engineer </h2>
-</div>
-<div id="d1">
-<h3 align="center">
-I am an energetic and imaginative student in the field of Computer Science and Mathematics who is passionate about technology and business. I want to be a part of a team, where I can share my knowledge and skills for the growth of the organization and myself. I have high awareness of the industry issues and trends.
-I am ambitious hardworker who wants to get noticed and has the drive and massive energy needed to make a difference to a project.
-</h3>
-</div>
-<div style="width:800px; margin:20px auto;[B]padding:20px 0;[/B]">
-<a href="Manas's Resume (1).pdf"> <button type="button" class="b"> Download Resume </button></a>
+<h1> Manas Bichoo  </h1>
+<h2> Skilled Engineer </h2>
 </div>
 <div>
-<a href ="mailto: manas16b@gmail.com"><button type="button" class="b">Contact Me</button></a>
+<hr style="border:3px solid #acabab">
+<h4>
+"I am an energetic and imaginative student in the field of Computer Science and Mathematics who is passionate about technology and business. I want to be a part of a team, where I can share my knowledge and skills for the growth of the organization and myself. I have high awareness of the industry issues and trends.
+I am ambitious hardworker who wants to get noticed and has the drive and massive energy needed to make a difference to a project."
+</h4>
+<hr style="border:3px solid #acabab">
 </div>
-<div style="width:800px; margin:20px auto;[B]padding:20px 0;[/B]">
-<a href ="https://archmanas.wordpress.com/"><button type="button" class="b">MY BLOG</button></a>
+<div class="education">
+        <div class="heading"><h1>Education</h1></div>
+      <hr style="border:3px solid #acabab">
+        <div class="row">
+          <div class="col-md-4 col-12 edu">
+            <h2 style="font-weight:bold;">HSC (10th)</h2>
+            <p>SICA S.S. School No.2, Indore</p>
+            <p style="font-weight:bold;">9.0 CGPA (CBSE)</p>
+          </div>
+      <hr class="line">
+
+          <div class="col-md-4 col-12 edu">
+            <h2 style="font-weight:bold;">SSC (12th)</h2>
+            <p>SICA S.S. School No.2, Indore</p>
+            <p style="font-weight:bold;">85.2% (CBSE)</p>
+          </div>
+      <hr  class="line">
+          <div class="col-md-4 col-12 edu3">
+              <h2 style="font-weight:bold;">Integrated M. Tech (IT)</h2>
+              <p>IIPS-DAVV Indore</p>
+              <p style="font-weight:bold;">9.14 (6th sem)</p>
+          </div>
+        </div>
+    </div>
+    <hr style="border:3px solid #acabab">
+
+<!-- self info -->
+    <h2 class="heading">Skill-set</h2>
+    <i class="fas fa-star star"></i>
+    <i class="fas fa-star star"></i>
+    <i class="fas fa-star star"></i>
+    <i class="fas fa-star star"></i>
+    <i class="fas fa-star star2"></i>
+    <hr style="border:3px solid #acabab">
+
+    Python:<div class="skill"><p  data-value="95"   class="subject">95%</p></div>
+    Java:<div class="skill"><p  data-value="90"  class="subject">90%</p></div>
+    HTML:<div class="skill"><p  data-value="90"  class="subject">80%</p></div>
+    CSS:<div class="skill"><p  data-value="90"  class="subject">90%</p></div>
+    Javascript:<div class="skill"><p  data-value="80"  class="subject">80%</p></div>
+    Machine Learning:<div class="skill"><p  data-value="70"  class="subject">60%</p></div>
+    TensorFlow:<div class="skill"><p  data-value="70"  class="subject">70%</p></div>
+
+
+
+    <hr style="border:3px solid #acabab">
+
+<div class="heading"><h1>Contact</h1></div>
+<footer id="footer">
+
+ <h4>  Manas Bichoo </h4>
+      <h4>E-mail:  manas16b@gmail.com </h4>
+      <h4>Contact Number: 7898344353</h4>
+<h6> copyrights: Manas Bichoo </h6>
+
+    <h6 class="copyright"><i class="fa fa-copyright"></i></h6>
+  </footer>
+
+
+  </div>
 </div>
+
+
+
 </body>
 </html>
+
 ﻿
 ﻿
