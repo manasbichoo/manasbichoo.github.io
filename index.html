@@ -1,288 +1,464 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-  <title>Manas Bichoo</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
 
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <meta name="description" content="Manas Bichoo Personal website" />
+    <meta name="keywords" content="indore,, job, web design" />
+    <meta name="author" content="Manas Bichoo" />
+    <meta name="google-site-verification" content="0e75-VwaqN5FEq06g4S0sJ5JVbV6OK5WShoxiy2Y2Fk" />
+    <title>Manas Bichoo</title>
 
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
+    <!-- script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <!--Angular-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <!--<script src="https://code.angularjs.org/1.6.2/angular-route.min.js"></script>-->
+    <script src='js/app.js'></script>
 
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;}
-    }
-.i{
-border:2px solid black;
-width:170px;
-hight:170px;
-margin-right: 700px;
-}
-.i:hover
-{
-transform: scale(1.5);
-transition-duration: 0.1s;
-box-shadow:5px 5px 5px 5px #333333;
-}
-
-#d2
-{
-font-variant:small-caps;
-text-decoration: underline wavy black;
-}
-
-#d1
-{
-border: 1px solid black;
-border-radius: 40px;
-font-variant:small-caps;
-font-size:10px;
-}
-.heading
-{
-font-variant:small-caps;
-text-decoration: underline wavy black;
-}
-
-.education{
-    margin-top:10%;
-}
-
-.edu{
-    text-align: center;
-    border-right: 2px solid black;
-}
-
-.edu3{
-    text-align: center;
-}
-.line{
-    display: none;
-}
-
-.self_info{
-    margin-top:50px;
-    padding: 10px;
-    text-align: justify;
-}
-
-.star{
-    margin-top:5px;
-    color:gold;
-}
-.star2{
-    color:rgb(179, 176, 176);
-}
-
-.skill{
-    font-size: 0%;
-    text-align: center;
-
-}
-
-.subject{
-    height: 15px;
-    border-radius: 50px;
-    background-color: rgb(83, 80, 80);
-
-}
-
- [data-value="95"]{
-    width: 95%;
-}
-[data-value="90"]{
-    width: 90%;
-}
-[data-value="80"]{
-    width: 80%;
-}
-[data-value="90"]{
-    width: 90%;
-}
-[data-value="75"]{
-    width: 75%;
-}
-[data-value="60"]{
-    width: 60%;
-}
-[data-value="70"]{
-    width: 70%;
-}
-
-footer{
-    background-color: #383636;
-}
-
-ul{
-    list-style-type: none;
-}
-footer h4{
-    margin:5px;
-    color:white;
-}
-
-.contact_logo li{
-    display: inline;
-}
-
-.logos{
-    margin-left: 10px;
-    color:white;
-    font-size: 25px;
-}
-
-.logos:hover{
-    cursor: pointer;
-    color: aquamarine;
-}
-
-.copyright{
-    color: aliceblue;
-    text-align: center;
-}
-
-
-
-  </style>
+    <!-- favicons
+	================================================== -->
+    <link rel="icon" type="image/png" href="logo.png">
+        <!-- Hotjar Tracking Code for www.mrinaljain.com -->
+        <script>
+            (function (h, o, t, j, a, r) {
+                h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+                h._hjSettings = { hjid: 1102284, hjsv: 6 };
+                a = o.getElementsByTagName('head')[0];
+                r = o.createElement('script'); r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+        </script>
 </head>
-<body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="Manas's Resume.pdf">@_archman_</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="Manas's Resume.pdf">Resume</a></li>
-        <li><a href="https://www.github.com/manasbichoo">Projects</a></li>
-        <li><a href ="#footer">Contact</a></li>
-        <li><a href ="https://archmanas.wordpress.com/">Blog</a></li>
-      </ul>
+<body id="top" ng-app="myApp">
 
-    </div>
-  </div>
-</nav>
+    <!-- header================================================== -->
+    <header>
+        <div class="row">
 
-<div class="container-fluid text-center">
-  <div class="row content">
+            <div class="top-bar">
+                <a class="menu-toggle" href="#"><span>Menu</span></a>
 
-    <div class="col-sm-8 text-left" id="about">
-      <img src="logo.png" class="i"/>
-      <img src="manas.JPG" class="i" />
-<div id="d2">
-<h1> Manas Bichoo  </h1>
-<h2> Skilled Engineer </h2>
-</div>
-<div>
-<hr style="border:3px solid #acabab">
-<h4>
-"I am an energetic and imaginative student in the field of Computer Science and Mathematics who is passionate about technology and business. I want to be a part of a team, where I can share my knowledge and skills for the growth of the organization and myself. I have high awareness of the industry issues and trends.
-I am ambitious hardworker who wants to get noticed and has the drive and massive energy needed to make a difference to a project."
-</h4>
-<hr style="border:3px solid #acabab">
-</div>
-<div class="education">
-        <div class="heading"><h1>Education</h1></div>
-      <hr style="border:3px solid #acabab">
+                <div class="logo" ng-controller="MainController">
+                    <a href="index.html">Manas Bichoo</a>
+                </div>
+
+                <nav id="main-nav-wrap">
+                    <ul class="main-navigation">
+                        <li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
+                        <li><a class="smoothscroll" href="#about" title="">About</a></li>
+                        <li><a href="Manas's Resume.pdf" title="">Resume</a></li>
+                       
+                        <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
+                        <li><a href="https://archmanas.wordpress.com/" title="">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /top-bar -->
+
+        </div>
+        <!-- /row -->
+    </header>
+    <!-- /header -->
+
+    <!-- intro section
+   ================================================== -->
+    <section id="intro">
+
+        <div class="intro-overlay"></div>
+
+        <div class="intro-content">
+            <div class="row">
+
+                <div class="col-twelve">
+
+                    <h5>Hello World,</h5>
+                    <h1>It's Manas Bichoo</h1>
+
+                    <p class="intro-position">
+                        <span>Software Developer</span>
+                        <span>Machine Learning Enthusiast</span>
+                        <span>AI Developer</span>
+                    </p>
+
+                    <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- /intro-content -->
+
+        <ul class="intro-social">
+            <li><a target="_blank" href="https://www.facebook.com/manasb07"><i class="fa fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://twitter.com/_archman_"><i class="fa fa-twitter"></i></a></li>
+            
+            <li><a target="_blank" href="https://www.instagram.com/_archman_/"><i class="fa fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/manas-bichoo-7bba23131/"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+        <!-- /intro-social -->
+
+    </section>
+    <!-- /intro -->
+
+
+    <!-- about section
+   ================================================== -->
+    <section id="about">
+
+        <div class="row section-intro">
+            <div class="col-six">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Top Banner -->
+                <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-1222422410254597" data-ad-slot="9932624482"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+
+                </script>
+            </div>
+            <div class="col-six">
+                <script type="text/javascript">
+                    google_ad_client = "ca-pub-1222422410254597";
+                    google_ad_slot = "1555618621";
+                    google_ad_width = 728;
+                    google_ad_height = 90;
+
+                </script>
+                <!-- fix two -->
+                <script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+
+
+                </script>
+            </div>
+            <div class="col-twelve">
+
+                <h5>About</h5>
+                <h1>Let me introduce myself.</h1>
+
+                <div class="intro-info">
+
+                    <img src="manas1.jpg" id="imgprof">
+
+                    <p class="lead">"I am an energetic and imaginative student in the field of Computer Science and Mathematics who is passionate about technology and business. I want to be a part of a team, where I can share my knowledge and skills for the growth of the organization and myself. I have high awareness of the industry issues and trends. I am ambitious hardworker who wants to get noticed and has the drive and massive energy needed to make a difference to a project."
+                    </p>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-format="fluid" data-ad-layout="in-article" data-ad-client="ca-pub-1222422410254597" data-ad-slot="2744399608"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+
+                    </script>
+                </div>
+
+            </div>
+        </div>
+        <!-- /section-intro -->
+
+        <div class="row about-content">
+
+            <div class="col-six tab-full">
+
+                <h3>Profile</h3>
+                <hr class="line">
+                <p>I love to implement innovative ideas.</p>
+
+                <ul class="info-list">
+                    <li>
+                        <strong>Fullname:</strong>
+                        <span>Manas Bichoo</span>
+                    </li>
+                    <li>
+                        <strong>Birth Date:</strong>
+                        <span>November 16, 1998</span>
+                    </li>
+                    <li>
+                        <strong>Job:</strong>
+                        <span>Self Employed Student Developer</span>
+                    </li>
+                    <li>
+                        <strong>Blog:</strong>
+                        <span>www.archmanas.wordpress.com</span>
+                    </li>
+                    <li>
+                        <strong>Email:</strong>
+                        <span>manas16b@gmail.com</span>
+                    </li>
+
+                </ul>
+                <!-- /info-list -->
+
+            </div>
+
+            <div class="col-six tab-full">
+
+                <h3>Skills</h3>
+                <!--   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>-->
+<hr class="line">
+                <ul class="skill-bars">
+                    <li>
+                        <div class="progress percent90"><span>90%</span></div>
+                        <strong>Python</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent85"><span>85%</span></div>
+                        <strong>Java</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent70"><span>90%</span></div>
+                        <strong>HTML, CSS, JavaScript</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent95"><span>80%</span></div>
+                        <strong>ML- Pytorch</strong>
+                    </li>
+                    <li>
+
+                        <div class="progress percent75"><span>75%</span></div>
+                        <strong>C#.net</strong>
+                    </li>
+
+                </ul> </div>
+                <!-- /skill-bars --></br>
+
+
+                <div class="education">
+    
+      <hr style="border:2px solid #acabab">
+      <h3> Education </h3>
+      <hr class="line">
+
+       </div>
         <div class="row">
           <div class="col-md-4 col-12 edu">
-            <h2 style="font-weight:bold;">HSC (10th)</h2>
+            <h3 style="font-weight:bold;">HSC (10th)</h3>
             <p>SICA S.S. School No.2, Indore</p>
             <p style="font-weight:bold;">9.0 CGPA (CBSE)</p>
           </div>
       <hr class="line">
 
           <div class="col-md-4 col-12 edu">
-            <h2 style="font-weight:bold;">SSC (12th)</h2>
+            <h3 style="font-weight:bold;">SSC (12th)</h3>
             <p>SICA S.S. School No.2, Indore</p>
             <p style="font-weight:bold;">85.2% (CBSE)</p>
           </div>
       <hr  class="line">
           <div class="col-md-4 col-12 edu3">
-              <h2 style="font-weight:bold;">Integrated M. Tech (IT)</h2>
-              <p>IIPS-DAVV Indore</p>
-              <p style="font-weight:bold;">9.14 (6th sem)</p>
+              <h3 style="font-weight:bold;">Integrated M. Tech(IT) (6th sem)</h3>
+              <p>IIPS-DAVV, Indore</p>
+              <p style="font-weight:bold;">9.14 GPA</p>
           </div>
         </div>
     </div>
-    <hr style="border:3px solid #acabab">
+    <hr style="border:3px solid #acabab"> </div>
 
-<!-- self info -->
-    <h2 class="heading">Skill-set</h2>
-    <i class="fas fa-star star"></i>
-    <i class="fas fa-star star"></i>
-    <i class="fas fa-star star"></i>
-    <i class="fas fa-star star"></i>
-    <i class="fas fa-star star2"></i>
-    <hr style="border:3px solid #acabab">
 
-    Python:<div class="skill"><p  data-value="95"   class="subject">95%</p></div>
-    Java:<div class="skill"><p  data-value="90"  class="subject">90%</p></div>
-    HTML:<div class="skill"><p  data-value="90"  class="subject">80%</p></div>
-    CSS:<div class="skill"><p  data-value="90"  class="subject">90%</p></div>
-    Javascript:<div class="skill"><p  data-value="80"  class="subject">80%</p></div>
-    Machine Learning:<div class="skill"><p  data-value="70"  class="subject">60%</p></div>
-    TensorFlow:<div class="skill"><p  data-value="70"  class="subject">70%</p></div>
+            
+
+        </div>
+        <section id="resume">        <div class="row button-section">
+            <div class="col-twelve">
+                <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+                <a href="Manas's Resume.pdf" title="Download CV" class="button button-primary">Download CV</a>
+            </div>
+        </div> </section>
 
 
 
-    <hr style="border:3px solid #acabab">
+    </section>
 
-<div class="heading"><h1>Contact</h1></div>
-<footer id="footer">
+     
+    <!-- /process-->
 
- <h4>  Manas Bichoo </h4>
-      <h4>E-mail:  manas16b@gmail.com </h4>
-      <h4>Contact Number: 7898344353</h4>
-<h6> copyrights: Manas Bichoo </h6>
+    <section id="contact">
 
-    <h6 class="copyright"><i class="fa fa-copyright"></i></h6>
-  </footer>
+        <div class="row section-intro">
+            <div class="col-twelve">
+
+                <h5>Contact</h5>
+                <h1>I'd Love To Hear From You.</h1>
+
+                <!--<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>-->
+            </div>
+        </div>
+
+        <!--
+   	<div class="row contact-form">
+
+   		<div class="col-twelve">
+
+            
+            <form name="contactForm" id="contactForm" method="post" action="">
+      			<fieldset>
+
+                  <div class="form-field">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                  </div>
+                  <div class="form-field">
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	               </div>
+                  <div class="form-field">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	               </div>                       
+                  <div class="form-field">
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	               </div>                      
+                 <div class="form-field">
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> 
+
+            
+            <div id="message-warning">            	
+            </div>            
+            
+      		<div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+      		</div>
+
+         </div>
+   		
+   	</div>
+		-->
+
+    </section>
 
 
-  </div>
-</div>
+    <!-- footer
+   ================================================== -->
 
+    <footer id="contact">
+        <div class="row contact-info">
 
+            <div class="col-four tab-full">
+
+                <div class="icon">
+                    <i class="icon-pin"></i>
+                </div>
+
+                <h5>Where to find me</h5>
+
+                <p>
+                    In Tech Events<br> Or
+                    <br> Linkedin </p>
+
+            </div>
+
+            <div class="col-four tab-full collapse">
+
+                <div class="icon">
+                    <i class="icon-mail"></i>
+                </div>
+
+                <h5>Email Me At</h5>
+
+                <p>manas16b@gmail.com<br> 
+                </p>
+
+            </div>
+
+            <div class="col-four tab-full">
+
+                <div class="icon">
+                    <i class="icon-phone"></i>
+                </div>
+
+                <h5>Call Me At</h5>
+
+                <p>Mobile: (+91) 7898344353<br> 
+
+                </p>
+
+            </div>
+
+        </div>
+        <!-- /contact-info -->
+        <div class="row">
+
+            <div class="col-six tab-full pull-right social">
+
+                <ul class="footer-social">
+                    
+            <li><a target="_blank" href="https://www.facebook.com/manasb07"><i class="fa fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://twitter.com/_archman_"><i class="fa fa-twitter"></i></a></li>
+            
+            <li><a target="_blank" href="https://www.instagram.com/_archman_/"><i class="fa fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/manas-bichoo-7bba23131/"><i class="fa fa-linkedin"></i></a></li>
+        
+                </ul>
+
+            </div>
+
+            <div class="col-six tab-full">
+                <div class="copyright">
+                    <span>Copyright: Manas Bichoo 2019.</span>
+                    <span>Designd by: <a href="https://www.linkedin.com/in/manas-bichoo-7bba23131/">Manas Bichoo</a></span>
+                </div>
+            </div>
+
+            <div id="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+            </div>
+
+        </div>
+        <!-- /row -->
+
+    </footer>
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- Java Script
+   ================================================== -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- mrinal_one -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-77809126-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-77809126-1');
+</script>
 
 </body>
-</html>
 
-﻿
-﻿
+</html>
